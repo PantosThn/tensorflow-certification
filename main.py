@@ -59,8 +59,6 @@ def univariate_window_dataset(series, window_size, batch_size, buffer_size=100):
 if __name__ == '__main__':
 
     series = np.arange(5 * 365 + 1)
-    print(series)
-    dataset = univariate_window_dataset(series, window_size=10, batch_size=32)
 
     # Create train dataset and validation dataset
     split_time = 1000
